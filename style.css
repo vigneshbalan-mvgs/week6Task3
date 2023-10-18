@@ -7,6 +7,7 @@
     padding-bottom: 15px;
     transform: translate(-50%,-50%);    
     background: rgba(2, 90, 255, 0.589);
+    border-radius: 6px;
 }
 #signupBtn{
     font-size: 12px;
