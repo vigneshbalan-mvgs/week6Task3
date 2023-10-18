@@ -27,3 +27,23 @@
     display: inline-block;
     color: rgb(0, 0, 0);
 }
+
+/* todo  */
+#center{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 15px;
+    padding-top: 29px;
+    transform: translate(-50%,-50%);    
+    background: rgba(2, 90, 255, 0.589);
+    
+}
+#list li{
+    padding: 10px;
+    list-style: none;
+    
+    
+}

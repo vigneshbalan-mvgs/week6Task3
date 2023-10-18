@@ -1,3 +1,6 @@
+// signup form 
+
+let username = document.getElementById("uname")
 let password = document.getElementById("password");
   let passwordConfirm = document.getElementById("passwordConfirm");
   let message = document.getElementById("message");
@@ -18,3 +21,26 @@ password.addEventListener("keyup",()=>{
 })
 
 passwordConfirm.addEventListener("keyup",checkPassword);
+
+
+
+//todo list
+
+const todoForm = document.getElementById("todo-form");
+const lastList = document.getElementById("task-list");
+
+function addTask(Task){
+  const listItem = document.createElement("li")
+  listItem.innerHTML = '<input type="checkbox"/> <span>${task}</span><button>Delete</button>';
+  lastList.appendChild(listItem)
+}
+todoForm.addEventListener("submit",(event)=>{
+  event.preventDefault();
+  const input = document.getElementById("task-input");
+  const task = input.value;
+  addTask(task);
+  input.value="";
+
+})
+
+
