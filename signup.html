@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="container-fluid" id="loginform">
-    <form action="/main.html" class="" onsubmit="validate(); return false" >
+    <form action="/main.html">
         <div class="mb-3 mt-3">
           <label for="uname" class="form-label">Username:</label>
           <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -32,19 +32,11 @@
         </div>
         <p id="message"></p>
         <a href="/index.html" ><h5 id="signupBtn">Already have a Account</h5></a>
-        <button id="signupFormBtn" type="submit" class="btn btn-primary" onclick="checkPassword">Submit</button>
+        <button id="signupFormBtn" type="submit" class="btn btn-primary">Submit</button>
       </form> 
 </div>
 
 
-<script src="script.js">
-    
-      function checkPassword(){
-        let password = document.getElementById("password").value;
-      let passwordConfirm = document.getElementById("passwordConfirm").value;
-      console.log(password, passwordConfirm);
-      let signupFormBtn = document.getElementById("signupFormBtn").value;
-      }
-</script>
+<script src="script.js"></script>
 </body>
 </html>

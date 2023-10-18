@@ -1,13 +1,20 @@
-var uname= document.loginform.uname;
-var pwd= document.loginform.pwd;
+let password = document.getElementById("password");
+  let passwordConfirm = document.getElementById("passwordConfirm");
+  let message = document.getElementById("message");
+  let signupFormBtn = document.getElementById("signupFormBtn");
+  signupFormBtn.disabled = true;
+  
+function checkPassword(){
+  message.innerText = password.value == passwordConfirm.value ? 'Matching' : 'Not matching';
+  if(password.value==passwordConfirm.value){
+    signupFormBtn.disabled= false;
+  }
 
-function valitate(){
-    if(uname.value){
-        uname.classList.remove("is-invalid");
-        uname.classList.add("is-valid");
-    }
-    else{
-        uname.classList.add("is-valid");
-        uname.classList.remove("is-invalid");
-    }
 }
+password.addEventListener("keyup",()=>{
+    if(password.value.length !=0){
+        checkPassword();
+    }
+})
+
+passwordConfirm.addEventListener("keyup",checkPassword);
