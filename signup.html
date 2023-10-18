@@ -10,9 +10,41 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Hello-Bootstrap</h1>
+  <div class="container-fluid" id="loginform">
+    <form action="/main.html" class="" onsubmit="validate(); return false" >
+        <div class="mb-3 mt-3">
+          <label for="uname" class="form-label">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Confirm Password:</label>
+          <input type="password" class="form-control" id="passwordConfirm" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <p id="message"></p>
+        <a href="/index.html" ><h5 id="signupBtn">Already have a Account</h5></a>
+        <button id="signupFormBtn" type="submit" class="btn btn-primary" onclick="checkPassword">Submit</button>
+      </form> 
+</div>
 
 
-<script src="script.js"></script>
+<script src="script.js">
+    
+      function checkPassword(){
+        let password = document.getElementById("password").value;
+      let passwordConfirm = document.getElementById("passwordConfirm").value;
+      console.log(password, passwordConfirm);
+      let signupFormBtn = document.getElementById("signupFormBtn").value;
+      }
+</script>
 </body>
 </html>

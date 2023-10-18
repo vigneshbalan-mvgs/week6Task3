@@ -11,8 +11,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid" id="login-form">
-        <form action="/action_page.php" class="was-validated">
+    <div class="container-fluid" id="loginform">
+        <form action="/main.html" class="" onsubmit="validate(); return false" >
             <div class="mb-3 mt-3">
               <label for="uname" class="form-label">Username:</label>
               <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -25,11 +25,12 @@
               <div class="valid-feedback">Valid.</div>
               <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/signup.html" ><h5 id="signupBtn">Create An Account</h5></a>
+            <button id="loginFormBtn" type="submit" class="btn btn-primary">Submit</button>
           </form> 
     </div>
 
 
-<script src="script.js"></script>
+<script src="script.js"></script> 
 </body>
 </html>

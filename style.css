@@ -1,9 +1,29 @@
 
-#login-form{
+#loginform{
     width: max-content;
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-bottom: 15px;
     transform: translate(-50%,-50%);    
     background: rgba(2, 90, 255, 0.589);
+}
+#signupBtn{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    text-shadow: 1px;
+}
+#signupBtn:hover{
+    scale: 105%;
+    transform: rotate(3deg);
+    color: rgb(25, 0, 255);
+}
+
+#message{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color: red;
 }
