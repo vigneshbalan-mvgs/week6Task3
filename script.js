@@ -1,7 +1,7 @@
 // signup form 
 
-  export let username = document.getElementById("uname")
-  export let password = document.getElementById("password");
+  let username = document.getElementById("username")
+  let password = document.getElementById("password");
   let passwordConfirm = document.getElementById("passwordConfirm");
   let message = document.getElementById("message");
   let signupFormBtn = document.getElementById("signupFormBtn");
@@ -25,4 +25,5 @@ password.addEventListener("keyup",()=>{
 }) 
 
 passwordConfirm.addEventListener("keyup",checkPassword);
+
 
