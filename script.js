@@ -12,6 +12,9 @@ function checkPassword(){
   if(password.value==passwordConfirm.value){
     signupFormBtn.disabled= false;
   }
+  else{
+    signupFormBtn.disabled= true;
+  }
 
 }
 password.addEventListener("keyup",()=>{
