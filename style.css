@@ -1,0 +1,9 @@
+
+#login-form{
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    background: rgba(2, 90, 255, 0.589);
+}
