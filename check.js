@@ -1,19 +1,24 @@
 //login form
 import { username,password } from "./script";
-const uname = document.getElementById('uname');
-  const pwd = document.getElementById('pwd');
-  const loginBtn = document.getElementById('loginFormBtn');
-loginBtn.disabled = true;
-function checklogin(){
-  uname.addEventListener||pwd.addEventListener('keyup',()=>{
-    console.log('hello')
-    if(uname==username & pwd== password){
-        loginBtn.disabled = false;
+    const uname = document.getElementById('uname');
+    const pwd = document.getElementById('pwd');
+    const loginBtn = document.getElementById('loginFormBtn');
+    loginBtn.disabled = true;
+ 
+  
+    function checkPassword(){ 
+      if(pwd.value==password.value || uname.value=== username.value){
+        signupFormBtn.disabled= false;
+      }
+      else{
+        signupFormBtn.disabled= true;
+      }
     }
-    else{
-        loginBtn.disabled = true;
-        
-    }
-  })
+    pwd.addEventListener("keyup",()=>{
+        if(password.value.length !=0){
+            checkPassword();
+        }
+    }) 
     
-}
+    pwd.addEventListener("keyup",checkPassword);
+    
