@@ -1,7 +1,7 @@
 // signup form 
 
-let username = document.getElementById("uname")
-let password = document.getElementById("password");
+  let username = document.getElementById("uname")
+  let password = document.getElementById("password");
   let passwordConfirm = document.getElementById("passwordConfirm");
   let message = document.getElementById("message");
   let signupFormBtn = document.getElementById("signupFormBtn");
