@@ -9,16 +9,18 @@ loginBtn.disabled = true;
   
 function checkPassword(){ 
   if(uname!=""){
-    signupFormBtn.disabled= false;
+    loginBtn.disabled = false;
+
   }
   else{
-    signupFormBtn.disabled= true;
+    loginBtn.disabled = true;
+
   }
 }
-password.addEventListener("keyup",()=>{
-    if(password.value.length !=0){
+pwd.addEventListener("keyup",()=>{
+    if(pwd.value.length !=6){
         checkPassword();
     }
 }) 
 
-passwordConfirm.addEventListener("keyup",checkPassword);
+uname.addEventListener("keyup",checkPassword);
