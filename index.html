@@ -20,18 +20,18 @@
         </div>
         <div class="mb-3">
           <label for="pwd" class="form-label">Password:</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd" required>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd" minlength="6" required >
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <div class="mb-3">
           <label for="pwd" class="form-label">Confirm Password:</label>
-          <input type="password" class="form-control" id="passwordConfirm" placeholder="Enter password" name="pswd" required>
+          <input type="password" class="form-control" id="passwordConfirm" placeholder="Enter password" name="pswd"minlength="6" required >
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <p id="message"></p>
-        <a href="login.html" ><h5 id="signupBtn">Already have a Account</h5></a>
+        <br>
         <button id="signupFormBtn" type="submit" class="btn btn-primary">Submit</button>
       </form> 
 </div>
