@@ -8,7 +8,7 @@ loginBtn.disabled = true;
  
   
 function checkPassword(){ 
-  if(uname!=""){
+  if(pwd.value.length >=6){
     loginBtn.disabled = false;
 
   }
